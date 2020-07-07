@@ -1,0 +1,12 @@
+it/pkg/authoring/page/Page.class
+it/pkg/run/RemoteSafariTest.class
+it/pkg/run/DomesticSafariTest.class
+it/pkg/run/DomesticRunners.class
+it/pkg/run/DomesticChromeTest.class
+it/pkg/run/DomesticFirefoxTest.class
+it/pkg/run/RemoteChromeTest.class
+it/pkg/run/SingleRunner.class
+it/pkg/run/CucumberConfig.class
+it/pkg/authoring/step/Sample.class
+it/pkg/run/RemoteRunners.class
+it/pkg/run/RemoteFirefoxTest.class

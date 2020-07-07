@@ -1,0 +1,55 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< archetype.it:basic-project >---------------------
+[INFO] Building basic-project 0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ basic-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ basic-project ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ basic-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ basic-project ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/target/test-classes
+@Override process() template: [it.pkg.run.DomesticRunners, it.pkg.run.RemoteRunners]
+element: it.pkg.run.DomesticRunners
+Processing DomesticRunners as model Runner
+Runners packaged in: it.pkg.run
+Generating: ~>> DomesticChromeTest
+Generating: ~>> DomesticFirefoxTest
+Generating: ~>> DomesticSafariTest
+element: it.pkg.run.RemoteRunners
+Processing RemoteRunners as model Runner
+Runners packaged in: it.pkg.run
+Generating: ~>> RemoteChromeTest
+Generating: ~>> RemoteFirefoxTest
+Generating: ~>> RemoteSafariTest
+2(s) files processed and 6(s) files created by SIV
+@Override process() template: []
+@Override process() template: []
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ basic-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ basic-project ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/target/basic-project-0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M3:integration-test (default) @ basic-project ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.0.0-M3:verify (default) @ basic-project ---
+[INFO] Failsafe report directory: /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/target/failsafe-reports
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.649 s
+[INFO] Finished at: 2020-07-07T17:27:35-04:00
+[INFO] ------------------------------------------------------------------------
