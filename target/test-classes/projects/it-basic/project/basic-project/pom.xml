@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>com.github.io-siv</groupId>
 			<artifactId>support</artifactId>
-			<version>0.2.1</version>
+			<version>0.2.3</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -103,6 +103,67 @@
 									<systemPropertyVariables>
 										<studio.gizmo.browser>Chrome</studio.gizmo.browser>
 										<studio.profileId>single</studio.profileId>
+									</systemPropertyVariables>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>domestic</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>${maven.failsafe-plugin.version}</version>
+						<executions>
+							<execution>
+								<configuration>
+									<includes>
+										<include>it/pkg/run/Domestic*Runner.java</include>
+									</includes>
+									<parallel>classes</parallel>
+									<useUnlimitedThreads>true</useUnlimitedThreads>
+									<forkCount>4</forkCount>
+									<reuseForks>true</reuseForks>
+									<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+									<systemPropertyVariables>
+										<studio.profileId>domestic</studio.profileId>
+									</systemPropertyVariables>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>remote</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>${maven.failsafe-plugin.version}</version>
+						<executions>
+							<execution>
+								<configuration>
+									<includes>
+										<include>it/pkg/run/Remote*Runner.java</include>
+									</includes>
+									<parallel>classes</parallel>
+									<useUnlimitedThreads>true</useUnlimitedThreads>
+									<forkCount>4</forkCount>
+									<reuseForks>true</reuseForks>
+									<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+									<systemPropertyVariables>
+										<studio.profileId>remote</studio.profileId>
+										<studio.local>true</studio.local>
+										<studio.local.force>true</studio.local.force>
+										<studio.local.debug>true</studio.local.debug>
 									</systemPropertyVariables>
 								</configuration>
 							</execution>

@@ -1,15 +1,15 @@
 package it.pkg.run;
 
 import org.junit.BeforeClass;
-import it.pkg.run.RemoteRunners;
+import it.pkg.run.DomesticRunners;
 
 
-public class RemoteChromeTest extends RemoteRunners {
+public class DomesticChromeRunner extends DomesticRunners {
 
     @BeforeClass
     public static void before() {
         System.setProperty("studio.gizmo.acceptSslCerts", "true");
-        System.setProperty("studio.gizmo.name", "RemoteChromeTest");
+        System.setProperty("studio.gizmo.name", "DomesticChromeRunner");
         System.setProperty("studio.gizmo.os", "");
         System.setProperty("studio.gizmo.osVersion", "");
         System.setProperty("studio.gizmo.browser", "Chrome");
@@ -20,6 +20,6 @@ public class RemoteChromeTest extends RemoteRunners {
         System.setProperty("studio.gizmo.appium", "");
         System.setProperty("studio.custom", "");
 
-        System.out.println("[SIV] run with: RemoteChromeTest");
+        System.out.println("[SIV] run with: DomesticChromeRunner");
     }
 }

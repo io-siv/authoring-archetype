@@ -4,15 +4,15 @@ import org.junit.BeforeClass;
 import it.pkg.run.DomesticRunners;
 
 
-public class DomesticSafariTest extends DomesticRunners {
+public class DomesticFirefoxRunner extends DomesticRunners {
 
     @BeforeClass
     public static void before() {
         System.setProperty("studio.gizmo.acceptSslCerts", "true");
-        System.setProperty("studio.gizmo.name", "DomesticSafariTest");
+        System.setProperty("studio.gizmo.name", "DomesticFirefoxRunner");
         System.setProperty("studio.gizmo.os", "");
         System.setProperty("studio.gizmo.osVersion", "");
-        System.setProperty("studio.gizmo.browser", "Safari");
+        System.setProperty("studio.gizmo.browser", "Firefox");
         System.setProperty("studio.gizmo.browserName", "");
         System.setProperty("studio.gizmo.browserVersion", "");
         System.setProperty("studio.gizmo.device", "");
@@ -20,6 +20,6 @@ public class DomesticSafariTest extends DomesticRunners {
         System.setProperty("studio.gizmo.appium", "");
         System.setProperty("studio.custom", "");
 
-        System.out.println("[SIV] run with: DomesticSafariTest");
+        System.out.println("[SIV] run with: DomesticFirefoxRunner");
     }
 }
