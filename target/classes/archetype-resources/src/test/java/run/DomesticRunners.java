@@ -20,5 +20,4 @@ import io.siv.support.annotation.Gizmo;
 @Gizmo(browser = "Chrome")
 @Gizmo(browser = "Firefox")
 @Gizmo(browser = "Safari")
-public abstract class DomesticRunners extends CucumberConfig {
-}
+public abstract class DomesticRunners extends CucumberConfig {}

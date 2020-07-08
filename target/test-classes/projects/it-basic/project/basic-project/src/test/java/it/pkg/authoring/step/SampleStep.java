@@ -1,6 +1,6 @@
-package ${package}.authoring.step;
+package it.pkg.authoring.step;
 
-import ${package}.authoring.page.Page;
+import it.pkg.authoring.page.SamplePage;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -10,15 +10,18 @@ import io.cucumber.java.en.When;
 
 import io.siv.support.service.Connection;
 import io.siv.support.service.ConnectionFactory;
+import io.siv.support.util.Waiter;
 
-public class Sample {
+import org.openqa.selenium.Keys;
 
-	private Page page;
+public class SampleStep {
+
+	private SamplePage page;
 
 	@Before("@Sample")
 	public void before() {
-		Connection con = ConnectionFactory.instanceOf(Sample.class);
-		page = new Page(con);
+		Connection con = ConnectionFactory.instanceOf(SampleStep.class);
+		page = new SamplePage(con);
 	}
 
 	@After("@Sample")
@@ -33,16 +36,11 @@ public class Sample {
 
 	@When("I type query as {string}")
 	public void i_type_query_as(String query) {
-		// send keys
-	}
-
-	@Then("I submit")
-	public void i_submit() {
-		// submit the page
+		page.search.sendKeys(query, Keys.ENTER);
 	}
 
 	@Then("I should see title {string}")
-	public void i_should_see_title(String title) {
-		// Assert page title === title
+	public void i_should_see_title(String expected) {
+		Waiter.waitForPageTitle(page.driver(), expected);
 	}
 }

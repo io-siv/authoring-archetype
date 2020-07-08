@@ -29,10 +29,9 @@ Generating: ~>> DomesticSafariRunner
 element: it.pkg.run.RemoteRunners
 Processing RemoteRunners as model Runner
 Runners packaged in: it.pkg.run
-Generating: ~>> RemoteChromeRunner
-Generating: ~>> RemoteFirefoxRunner
-Generating: ~>> RemoteSafariRunner
-2(s) files processed and 6(s) files created by SIV
+Generating: ~>> RemoteSamsungGalaxyS870RealMobileRunner
+Generating: ~>> RemoteWindows10IE110Runner
+2(s) files processed and 5(s) files created by SIV
 @Override process() template: []
 @Override process() template: []
 [INFO] 
@@ -50,6 +49,6 @@ Generating: ~>> RemoteSafariRunner
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.685 s
-[INFO] Finished at: 2020-07-08T08:13:38-04:00
+[INFO] Total time:  1.683 s
+[INFO] Finished at: 2020-07-08T13:02:09-04:00
 [INFO] ------------------------------------------------------------------------

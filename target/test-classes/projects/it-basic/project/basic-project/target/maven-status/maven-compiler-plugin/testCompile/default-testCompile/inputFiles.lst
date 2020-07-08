@@ -1,6 +1,6 @@
 /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/run/SingleRunner.java
 /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/run/CucumberConfig.java
-/Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/authoring/step/Sample.java
-/Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/authoring/page/Page.java
+/Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/authoring/page/SamplePage.java
+/Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/authoring/step/SampleStep.java
 /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/run/RemoteRunners.java
 /Users/jessejohnson/Documents/work/siv-authoring-archetype/target/test-classes/projects/it-basic/project/basic-project/src/test/java/it/pkg/run/DomesticRunners.java
