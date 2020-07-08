@@ -11,5 +11,4 @@ package ${package}.run;
  * system dependent. Logically then, switching to Safari on a non OS
  * X machine will fail. In addition, Safari's driver is baked into Selenium.
  */
-public class SingleRunner extends CucumberConfig {
-}
+public class SingleRunner extends CucumberConfig {}
